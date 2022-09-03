@@ -15,6 +15,7 @@ html{
   box-sizing: border-box;
   min-width: 380px;
   scroll-behavior: smooth;
+  background-color: black;
 }
 
 *,
@@ -169,112 +170,6 @@ transform:scale(2 2) ;
 
 /* -----CIERRE HOME-----*/
 
-.skills{
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  background-color: #000000;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-skills{
-  display: flex;
-  max-width: 80%;
-  height: 60%;
-  padding: 3rem;
-  justify-content: space-between;
-  box-shadow: 0rem 0rem 1rem  #2ed8e4;
-}
-
-.about-title{
-  font-family:var(--var-font);
-  font-size: 1.5rem;
-  color: var(--var-secondary-color);
-  text-align: center;
-}
-
-.about-text{
-  font-family:var(--var-font);
-  font-size: .9rem;
-  color: #fff;
-  text-align: center;
-}
-
-.about-me{
-  width: 40%;
-  padding: 1rem;
-  box-shadow: -.3rem -.1rem .1rem #ffffff;
-}
-
-.skills-me{
-  width: 40%; 
-  box-shadow: .3rem .1rem .1rem #ffffff;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  color: #fff;
-  font-family: var(--var-font);
-  text-align: center;
-  font-size: 1rem;
-}
-
-
-.redes img{
-  width: 3rem;
-  margin: 1rem;
-}
-
-.redes-lista{
-  display: flex;
-  justify-content: center;
-}
-
-
-.uno, .dos, .tres, .cuatro
-{
-  width: 100px;
-  height: 100px;
-  border-radius: 20%;
-  filter: drop-shadow(2px 2px 2px rgba(250, 246, 246, 0.555)) 
-}
-
-
-.uno{
-  background-image: url(/imagenes/prueba.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.dos{
-    background-image: url(/imagenes/css-adaptado.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.tres{
-    background-image: url(/imagenes/js-adaptado.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.cuatro{
-    background-image: url(/imagenes/bs-adaptado.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.row{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 2rem;
-  flex-wrap: wrap;
-}
-
-.uno, .dos, .tres, .cuatro p{
-  padding-top: 5rem;
-}
 
 /* ----RESPONSIVE----- */
 
@@ -443,118 +338,6 @@ transform:scale(2 2) ;
   left: 40px;
 }
 }
-
-/* Responsive copia */
-
-@media screen and (max-width:1440px) {
-  .skills .card-skills{
-    max-width: 100%;
-  }
-  .skills .card-skills .about-me{
-    width: 55%;
-  }
-  .skills .card-skills .about-me p{
-    width: 100%;
-    font-size: .8rem;
-  }
-  .about-me h1{
-    width: 100%;
-    font-size: .9rem;
-  }
-  .about-me img{
-    width: 30px;
-  }
-  .skills-me{
-    width: 45%;
-  }
-  .skills-me h1{
-    font-size: 1.2rem;
-    margin-bottom: 0%;
-  }
-  .row{
-    height: 35%;
-  }
-  .row p{
-    font-size: .8rem;
-  }
-}
-
-@media screen and (max-width:950px) {
-
-  .skills{
-    height: 205vh;
-  }
-  .skills .card-skills{
-    max-width: 80%;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .skills .card-skills .about-me{
-    width: 100%;
-  }
-  .skills .card-skills .about-me p{
-    width: 100%;
-    font-size: .8rem;
-  }
-  .about-me h1{
-    width: 100%;
-    font-size: .9rem;
-  }
-  .about-me img{
-    width: 30px;
-  }
-  .skills-me{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .skills-me h1{
-    font-size: 1.2rem;
-    margin-bottom: 0%;
-  }
-  .row{
-    height: 35%;
-  }
-  .row p{
-    font-size: .8rem;
-  }
-}
-
-@media screen and (max-width:768px) {
-
-  .skills{
-    height: 210vh;
-  }
-}
-
-@media screen and (max-width:426px) {
-
-  .skills{
-    height: 250vh;
-  }
-    .row{
-    width: 100%;
-  }
-  .uno,.dos,.tres,.cuatro{
-    width: 90px;
-  }
-}
-
-@media screen and (max-width:375px) {
-
-  .skills{
-    height: 260vh;
-  }
-    .row{
-    width: 100%;
-  }
-  .uno,.dos,.tres,.cuatro{
-    width: 72px;
-  }
-}
-
-
-
 /* animaciones */
 
 @keyframes AnimationOne {
@@ -636,5 +419,103 @@ transform:scale(2 2) ;
 
   to{
     box-shadow: 0rem 0rem 1rem  #ffffff;
+  }
+}
+
+/* PRUEBA */
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+
+.containter-flex{
+    border: medium solid aquamarine;
+    width: 80%;
+    height: 100vh;
+    margin:auto;
+
+}
+
+.card-flex{
+  display: flex;
+  width: 80%;
+  min-height: 500px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background-color: #1d1a1a;
+  box-shadow: 0px 0px 10px #ffffff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.about-me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  height: 80%;
+  padding: 4rem;
+  color: white;
+  font-size: 1.2rem;
+  font-family: var(--var-font);
+  box-shadow: -2px -2px 1px #ffffff;
+}
+.about-skills{
+  display: flex;
+  width: 50%;
+  padding: .5rem;
+  padding-top: 0;
+  height: 80%;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: var(--var-font);
+  box-shadow: 2px 2px 1px #ffffff;
+}
+
+.about-skills p{
+  font-size: 300%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30%;
+}
+
+.about-skills img{
+  width: 100px;
+}
+
+.about-me img{
+    width: 50px;
+}
+
+@media screen and (max-width:1160px){
+  .card-flex{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me{
+    width: 90%;
+  }
+
+  .about-skills{
+    width: 90%;
+  }
+  
+}
+@media screen and (max-width:555px){
+.about-skills p{
+    font-size: 150%;
+  }
+  .about-skills img{
+    width: 50px;
   }
 }
