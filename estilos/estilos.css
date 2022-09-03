@@ -1,0 +1,640 @@
+:root{
+  --var-primary-color: #000000;
+  --var-secondary-color: #2ed8e4;
+  --var-blur: blur(80%);
+  --var-font: 'Poppins', sans-serif;
+
+}
+
+body{
+  margin: 0;
+  max-width: 100%;
+}
+
+html{
+  box-sizing: border-box;
+  min-width: 380px;
+  scroll-behavior: smooth;
+}
+
+*,
+ *::after,
+ ::before{
+ box-sizing: border-box;
+}
+[id]{
+  scroll-margin-top: 36ex;
+}
+
+.header-content{
+  position: sticky;
+  top: 0rem;
+  z-index: 10000;
+}
+
+
+.nav-bar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  border: thin solid black;
+  height: 3rem;
+  background-color: var(--var-primary-color);
+}
+
+.nav-item{
+  display: flex;
+  width: 33%;
+  justify-content: space-around;
+  padding-top: 1rem;
+  min-width: 380px;
+}
+
+.nav-item a:hover{
+color: var(--var-secondary-color);
+filter: brightness(1.3);
+text-shadow: .1rem .1rem 1rem #ccc;
+}
+
+
+.nav-item a{
+  text-decoration: none;
+   color: #ccc;
+   font-weight: bold;
+   font-family:sans-serif;
+  }
+
+
+
+  /* Fin nav */
+
+
+.home{
+  background-image: url(/imagenes/computer-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  min-height: 450px;
+  position: relative;
+}
+
+  .card{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    margin:auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .card .front{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  width: 100%;
+  min-height: 300px;
+  margin-top: -2rem;
+}
+
+.card-body{
+  padding: 0 1rem 1rem 1rem;
+  font-family: var(--var-font);
+  color: #ccc;
+  height: 100vh;
+  flex: 1 1 auto;
+}
+
+.card .front .front-1{
+  margin: 0 auto;
+  position: relative;
+  left: -200px;
+    text-shadow: .2rem .1rem .1rem rgb(0, 0, 0);
+}
+.card .front .front-2{
+  text-shadow: .2rem .1rem .1rem rgb(0, 0, 0);
+}
+
+.card .front .front-3{
+  margin: 0 auto;
+  position: relative;
+  left: 155px;
+  color: var(--var-secondary-color);
+  text-shadow: .2rem .1rem .1rem black;
+}
+
+.card .front .front-1 h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    margin-top: 0;
+}
+.card .front .front-2 h1{
+  font-size: 10rem;
+  font-weight: bold;
+  line-height: .8;
+  margin: auto;
+}
+
+.card .front .front-3 h3{
+      font-size: 1.3rem;
+      font-weight: 600;
+}
+
+.card .front-0 img{
+ width: 18.75rem;
+ border-radius: 50%;
+ border: medium solid #2ed8e4;
+ margin-bottom: 3rem ;
+}
+
+.card .front-0 img:hover{
+transform:scale(2 2) ;
+}
+
+.card .front-4 img{
+ width: 100px;
+ padding: 0 1rem ;
+ margin-top: 1rem;
+
+}
+
+.card .front-4 img:hover{
+ filter: brightness(1.2);
+}
+
+/* -----CIERRE HOME-----*/
+
+.skills{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-skills{
+  display: flex;
+  max-width: 80%;
+  height: 60%;
+  padding: 3rem;
+  justify-content: space-between;
+  box-shadow: 0rem 0rem 1rem  #2ed8e4;
+}
+
+.about-title{
+  font-family:var(--var-font);
+  font-size: 1.5rem;
+  color: var(--var-secondary-color);
+  text-align: center;
+}
+
+.about-text{
+  font-family:var(--var-font);
+  font-size: .9rem;
+  color: #fff;
+  text-align: center;
+}
+
+.about-me{
+  width: 40%;
+  padding: 1rem;
+  box-shadow: -.3rem -.1rem .1rem #ffffff;
+}
+
+.skills-me{
+  width: 40%; 
+  box-shadow: .3rem .1rem .1rem #ffffff;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  font-family: var(--var-font);
+  text-align: center;
+  font-size: 1rem;
+}
+
+
+.redes img{
+  width: 3rem;
+  margin: 1rem;
+}
+
+.redes-lista{
+  display: flex;
+  justify-content: center;
+}
+
+
+.uno, .dos, .tres, .cuatro
+{
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  filter: drop-shadow(2px 2px 2px rgba(250, 246, 246, 0.555)) 
+}
+
+
+.uno{
+  background-image: url(/imagenes/prueba.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.dos{
+    background-image: url(/imagenes/css-adaptado.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.tres{
+    background-image: url(/imagenes/js-adaptado.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cuatro{
+    background-image: url(/imagenes/bs-adaptado.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.uno, .dos, .tres, .cuatro p{
+  padding-top: 5rem;
+}
+
+/* ----RESPONSIVE----- */
+
+
+
+@media screen and (max-width: 900px){
+  .nav-bar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: thin solid black;
+  height: 3rem;
+  background-color: var(--var-primary-color);
+}
+
+
+.nav-item{
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  padding: 1rem
+}
+
+
+
+.card .front .front-2 h1{
+  font-size: 8rem;
+  font-weight: bold;
+  line-height: .8;
+  margin: auto;
+}
+
+
+.card .front .front-1{
+  margin: 0 auto;
+  position: relative;
+  left: -150px;
+}
+
+.card .front .front-3{
+  margin: 0 auto;
+  position: relative;
+  left: 100px;
+}
+
+.card .front-0 img{
+ width: 270px;
+ border-radius: 50%;
+ border: medium solid #2ed8e4;
+ margin-bottom: 3rem ;
+}
+
+}
+
+
+@media screen and (max-width: 725px){
+.card .front .front-2 h1{
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: .8;
+  margin: auto;
+}
+
+.card .front .front-1 h3{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    margin-top: 0;
+}
+
+.card .front .front-3 h3{
+      font-size: 1rem;
+      font-weight: 600;
+}
+
+.card .front .front-1{
+  margin: 0 auto;
+  position: relative;
+  left: -100px;
+}
+
+.card .front .front-3{
+  margin: 0 auto;
+  position: relative;
+  left: 70px;
+}
+
+.card .front-0 img{
+ width: 230px;
+ border-radius: 50%;
+ border: medium solid #2ed8e4;
+ margin-bottom: 3rem ;
+}
+}
+
+@media screen and (max-width: 380px){
+.card .front .front-2 h1{
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: .8;
+  margin: auto;
+  position: relative;
+}
+
+.card .front .front-1 h3{
+    font-size: .8rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    margin-top: 0;
+}
+
+.card .front .front-3 h3{
+      font-size: .8rem;
+      font-weight: 600;
+}
+
+.card .front .front-1{
+  margin: 0 auto;
+  position: relative;
+  left: -60px;
+}
+
+.card .front .front-3{
+  margin: 0 auto;
+  left: -100px;
+  position: relative;
+  left: 60px;
+}
+}
+
+@media screen and (max-width: 560px){
+.card .front .front-2 h1{
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: .8;
+  margin: auto;
+  position: relative;
+}
+
+.card .front .front-1 h3{
+    font-size: .8rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    margin-top: 0;
+}
+
+.card .front .front-3 h3{
+      font-size: .8rem;
+      font-weight: 600;
+}
+
+.card .front .front-1{
+  margin: 0 auto;
+  position: relative;
+  left: -60px;
+}
+
+.card .front .front-3{
+  margin: 0 auto;
+  left: -100px;
+  position: relative;
+  left: 40px;
+}
+}
+
+/* Responsive copia */
+
+@media screen and (max-width:1440px) {
+  .skills .card-skills{
+    max-width: 100%;
+  }
+  .skills .card-skills .about-me{
+    width: 55%;
+  }
+  .skills .card-skills .about-me p{
+    width: 100%;
+    font-size: .8rem;
+  }
+  .about-me h1{
+    width: 100%;
+    font-size: .9rem;
+  }
+  .about-me img{
+    width: 30px;
+  }
+  .skills-me{
+    width: 45%;
+  }
+  .skills-me h1{
+    font-size: 1.2rem;
+    margin-bottom: 0%;
+  }
+  .row{
+    height: 35%;
+  }
+  .row p{
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width:950px) {
+
+  .skills{
+    height: 205vh;
+  }
+  .skills .card-skills{
+    max-width: 80%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .skills .card-skills .about-me{
+    width: 100%;
+  }
+  .skills .card-skills .about-me p{
+    width: 100%;
+    font-size: .8rem;
+  }
+  .about-me h1{
+    width: 100%;
+    font-size: .9rem;
+  }
+  .about-me img{
+    width: 30px;
+  }
+  .skills-me{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skills-me h1{
+    font-size: 1.2rem;
+    margin-bottom: 0%;
+  }
+  .row{
+    height: 35%;
+  }
+  .row p{
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  .skills{
+    height: 210vh;
+  }
+}
+
+@media screen and (max-width:426px) {
+
+  .skills{
+    height: 250vh;
+  }
+    .row{
+    width: 100%;
+  }
+  .uno,.dos,.tres,.cuatro{
+    width: 90px;
+  }
+}
+
+@media screen and (max-width:375px) {
+
+  .skills{
+    height: 260vh;
+  }
+    .row{
+    width: 100%;
+  }
+  .uno,.dos,.tres,.cuatro{
+    width: 72px;
+  }
+}
+
+
+
+/* animaciones */
+
+@keyframes AnimationOne {
+  from {
+    transform: translateX(0);
+  }
+
+  to{
+    transform: translateX(30%);
+  }
+}
+
+.AnimationOne{
+  animation-name: AnimationOne;
+  animation-duration: 2s;
+  animation-delay: 2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes AnimationTwo {
+  from {
+    filter: brightness(1); 
+  }
+
+  to{
+    filter: brightness(1.3);
+  }
+}
+
+.AnimationThree{
+  animation-name: AnimationThree;
+  animation-duration: 8s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes AnimationThree {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.AnimationFour{
+  animation-name: AnimationFour;
+  animation-duration: 8s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+@keyframes AnimationFour {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.AnimationColor{
+  animation-name: AnimationColor;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes AnimationColor {
+  from {
+    box-shadow: 0rem 0rem 1rem  #2ed8e4;
+  }
+
+  to{
+    box-shadow: 0rem 0rem 1rem  #ffffff;
+  }
+}
