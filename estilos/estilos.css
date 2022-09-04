@@ -47,23 +47,45 @@ html{
   display: flex;
   width: 33%;
   justify-content: space-around;
-  padding-top: 1rem;
+  align-items: center;
   min-width: 380px;
 }
 
-.nav-item a:hover{
-color: var(--var-secondary-color);
-filter: brightness(1.3);
-text-shadow: .1rem .1rem 1rem #ccc;
+.nav-item-1:hover .nav-anim{
+  transform: translateX(0px);
 }
 
+.nav-item-2:hover .nav-anim{
+  transform: translateX(0px);
+}
+
+.nav-item-3:hover .nav-anim{
+  transform: translateX(0px);
+}
+
+.nav-item-4:hover .nav-anim{
+  transform: translateX(0px);
+}
 
 .nav-item a{
   text-decoration: none;
    color: #ccc;
    font-weight: bold;
    font-family:sans-serif;
+   position: relative;
+   overflow: hidden;
   }
+
+.nav-anim{
+ position: absolute;
+ bottom: 0;
+ width: 98%;
+ height: .10rem;
+ background-color: var(--var-secondary-color);
+ transform: translateX(-110px);
+ transition: .4s ease-in-out;
+}
+
 
 
 
@@ -519,3 +541,4 @@ h1,h2,h3,h4,h5,h6{
     width: 50px;
   }
 }
+
