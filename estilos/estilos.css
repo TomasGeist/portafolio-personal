@@ -428,19 +428,23 @@ transform:scale(2 2) ;
 
 .AnimationColor{
   animation-name: AnimationColor;
-  animation-duration: 2s;
-  animation-delay: 1s;
+  animation-duration: 10s;
+  animation-delay: 0s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
 }
 
 @keyframes AnimationColor {
-  from {
-    box-shadow: 0rem 0rem 1rem  #2ed8e4;
+  0% {
+    box-shadow: none;
   }
 
-  to{
-    box-shadow: 0rem 0rem 1rem  #ffffff;
+  50%{
+  box-shadow: 0rem 0rem 1rem  #ffffff;
+  }
+
+  100%{
+    box-shadow: 0rem 0rem 1rem  #2ed8e4;
   }
 }
 
@@ -456,8 +460,19 @@ h1,h2,h3,h4,h5,h6{
     width: 80%;
     height: 100vh;
     margin:auto;
-
 }
+
+
+#section-2:target .about-me{
+  animation-name: AnimationColor;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+
 
 .card-flex{
   display: flex;
@@ -485,30 +500,28 @@ h1,h2,h3,h4,h5,h6{
   color: white;
   font-size: 1.2rem;
   font-family: var(--var-font);
-  box-shadow: -2px -2px 1px #ffffff;
+  box-shadow: 1px 1px 1px #ccc;
+
 }
 .about-skills{
   display: flex;
   width: 50%;
   padding: .5rem;
   padding-top: 0;
-  height: 80%;
+  min-height: 60.5vh;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 4rem;
   color: white;
   font-size: 1.2rem;
   text-align: center;
   font-family: var(--var-font);
-  box-shadow: 2px 2px 1px #ffffff;
+  border-top: thin solid white ;
+  
 }
 
-.about-skills p{
-  font-size: 300%;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 30%;
-}
+
 
 .about-skills img{
   width: 100px;
@@ -517,6 +530,105 @@ h1,h2,h3,h4,h5,h6{
 .about-me img{
     width: 50px;
 }
+
+
+/*PRUEBA NEGREADA*/
+
+.skills-button{
+  display: flex;
+  width: 100%;
+  min-height: 5vh;
+  border: 2px;
+  margin-bottom: 10%;
+  cursor: pointer;
+  background-color: var(--var-secondary-color);
+  justify-content: center;
+  box-shadow: 0px 0px 9px grey;
+  overflow: hidden;
+}
+
+.skills-button:hover{
+  background-color: rgba(47, 216, 228,0.8);
+}
+
+.skills-button a{
+  text-decoration: none;
+  font-family: var(--var-font);
+  font-size: 1.5rem;
+  color: black;
+  align-self: center;
+}
+
+.imagenes{
+  display: none;
+  opacity: 1;
+  margin-bottom: 10%;
+  width: 100%;
+}
+
+#tecnologias:target{
+  display: block;
+  position: relative;
+}
+
+#estudios:target{
+  display: block;
+  position: relative;
+}
+
+.skills-title{
+width: 100%;
+}
+
+.skills-title img{
+margin: 2%;
+}
+
+.invert{
+  filter: invert(1)
+}
+
+.close{
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  position: relative;
+  display: block
+}
+
+.derecha{
+  background-color: white;
+  width: 100%;
+  height: 20%;
+  transform-origin: top right;
+  transform: rotate(-45deg) translate(-.4rem,-.2rem);
+  position: absolute;
+}
+
+.izquierda{
+  background-color: white;
+  width: 100%;
+  height: 20%;
+   height: 20%;
+   transform-origin: top left;
+  transform: rotate(45deg) translate(.4rem,-.2rem);
+  position: absolute;
+}
+
+.close-img{
+  position: absolute;
+  color: rgba(0, 0, 0, 0);
+  left: 3px;
+  top: -8px;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.close, .derecha, .izquierda:hover{
+cursor: pointer;
+}
+
+/* FIN DE PRUEBA NEGREADA*/
 
 @media screen and (max-width:1160px){
   .card-flex{
@@ -539,6 +651,11 @@ h1,h2,h3,h4,h5,h6{
   }
   .about-skills img{
     width: 50px;
+  }
+
+  .skills-button a{
+  font-size: 1rem;
+  align-items: center;
   }
 }
 
